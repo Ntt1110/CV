@@ -1,9 +1,9 @@
 .khungmau{
 justify-content: center; 
  align-items: center;
-  height: 100vh;  
-width: 1200px;      
-  margin: 0 auto;
+  height: 130vh;  
+  width: 1200px;
+  margin:  auto ;
   padding: 0 16px;
   border: 1px solid #dddddd;
 }
@@ -11,30 +11,62 @@ body {
    /* display: flex; */
      margin: 0;
   font-family:'Times New Roman', Times, serif;   
-  font-size: 16px;
+  font-size: 20px;
   color: rgb(31 63 87 / 100%);
- 
+  background: #f5f7fa;
+
 }
 header{
     justify-content: center;
     align-items: center;
     padding: 20px;
+  
 }
 .about{
     display: flex;
     justify-content: right;
     
 }
+.contact-info{
+   background: white;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin: 0 auto;
+}
+.contact-item{
+ 
+}
 .contact{
-    width: maxwidth;    
+    width: maxwidth; 
+
 
 }
+i {
+    
+     color: #020202;
+     
+}
+
 .menu
 {
     list-style: none;
     display : flex;
     gap: 20px;
      padding: 0;
+}
+.contact h1{
+  text-align: center;
+}
+
+.contact p{
+  text-align: center;
+
+}
+.contact hr{
+  margin:  auto;
+}
+.contact .menu{
+    justify-content: center;
 }
 menu .li {
      border: 1px solid #999;     /* viền */
@@ -49,6 +81,7 @@ menu .li {
 .menu li:hover {
   background-color: #ddd;
   cursor: pointer;
+  box-shadow: #ddd;
 }
 li{
     
