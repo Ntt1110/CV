@@ -1,19 +1,30 @@
-.khungmau{
-justify-content: center; 
- align-items: center;
-  height: 130vh;  
-  width: 1200px;
-  margin:  auto ;
-  padding: 0 16px;
-  border: 1px solid #dddddd;
+:root {
+    --primary-color: #1f3f57;
+    --bg-color: #f5f7fa;
+    --text-color: #333;
+    --border-color: #dddddd;
+    --white: #ffffff;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.khungmau {
+    max-width: 900px; /* Giới hạn chiều rộng thay vì fix cứng */
+    margin: 20px auto;
+    background: var(--white);
+    padding: 40px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Thêm đổ bóng nhẹ cho sang */
 }
 body {
-   /* display: flex; */
-     margin: 0;
-  font-family:'Times New Roman', Times, serif;   
-  font-size: 20px;
-  color: rgb(31 63 87 / 100%);
-  background: #f5f7fa;
+  font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 1.6; /* Giúp văn bản thoáng hơn */
+    color: var(--primary-color);
+    background: var(--bg-color);
+    padding: 20px;
 
 }
 header{
@@ -36,34 +47,68 @@ header{
 .contact-item{
  
 }
-.contact{
-    width: maxwidth; 
 
-
-}
 i {
     
      color: #020202;
      
 }
+ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
 
-.menu
-{
+.menu {
     list-style: none;
-    display : flex;
+    display: flex;
     gap: 20px;
-     padding: 0;
+    margin-bottom: 30px;
+}
+.menu li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.menu li a:hover {
+    color: #007bff;
+}
+.GT {
+    display: flex;
+    flex-wrap: wrap; /* Tự xuống hàng trên mobile */
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 40px;
 }
 .contact h1{
-  text-align: center;
+  font-size: 32px;
+    margin-bottom: 5px;
+    text-align: center;
+  
 }
+
 
 .contact p{
   text-align: center;
+  margin-bottom: 5px;
+    font-size: 16px;
 
+}
+section h2, .MTNN h2, .HV h2, .KN h2, .St h2 {
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 .contact hr{
   margin:  auto;
+}
+hr {
+    border: none;
+    border-top: 1px solid var(--primary-color);
+    margin-bottom: 15px;
+    opacity: 0.3;
 }
 .contact .menu{
     justify-content: center;
@@ -87,15 +132,23 @@ li{
     
     border-radius: 5px;
 }
-.GT{
-    display: flex;
-  align-items: center; 
-  gap: 20px; 
-}
+
 
 .image {
-  width: 150px;
-  height: auto;
+    width: 160px;
+    height: 160px;
+    object-fit: cover; /* Giữ tỷ lệ ảnh không bị móp */
+    border-radius: 8px;
+}
+@media (max-width: 600px) {
+    .GT {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .khungmau {
+        padding: 20px;
+    }
 }
 
 
